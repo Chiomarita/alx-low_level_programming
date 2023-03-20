@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - A program that prints printf without using the puts command
- *
+ * main - A program that prints a line using printf function
  * Return: 0 (Success)
  */
 int main(void)
