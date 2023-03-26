@@ -1,6 +1,6 @@
 #include <stdio>
 /**
- * main - Prints the sum of all multiples of 3 0r 5 up tp 1024
+ * main - Prints the sum of all multiples of 3 0r 5 up to 1024
  * Return: Always (Success)
  */
 int main(void)
@@ -14,6 +14,6 @@ z += i;
 }
 i++;
 }
-printf("%d\n" z);
+printf("%d\n", z);
 return (0);
 }
