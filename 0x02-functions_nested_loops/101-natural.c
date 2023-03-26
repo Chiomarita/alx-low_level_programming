@@ -15,5 +15,6 @@ z += i;
 i++;
 }
 printf("%d\n", z);
+('\n');
 return (0);
 }
