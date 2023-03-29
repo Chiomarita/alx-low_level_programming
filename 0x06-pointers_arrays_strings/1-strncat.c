@@ -1,18 +1,18 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * _strchr - Entry point
- * @s: input
- * @c: input
- * Return: Always 0 (Success)
+ * _strncat - Concatenates two strngs using at most
+ * an inputted number of bytes from src.
+ * @dest: Thes string to be appendes upon.
+ * @src: The string to be appended to dest.
+ * @n: The number of bytes from src to be appended to dest.
+ * return: A pointer to the resulting string dest.
  */
-char *_strchr(char *s, char c)
+char *_strncat(char *dest, char *src, int n)
 {
-int i;
-for (i = 0; s[i] >= '\0'; i++)
-{
-if (s[i] == c)
-return (s + i);
-}
-return (NULL);
+int index = 0, dest_len = 0;
+while (dest[index++])
+dest_len++;
+for (index = 0; src[index] && index < n; index++)
+dest[dest_len++] = src[index];
+return (dest);
 }
